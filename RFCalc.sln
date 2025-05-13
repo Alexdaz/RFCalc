@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.13.35931.197 d17.13
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RFCalc", "RFCalc\RFCalc.csproj", "{2833EF70-1762-47FE-A2B0-B3C3A91DE776}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{2833EF70-1762-47FE-A2B0-B3C3A91DE776}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2833EF70-1762-47FE-A2B0-B3C3A91DE776}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2833EF70-1762-47FE-A2B0-B3C3A91DE776}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2833EF70-1762-47FE-A2B0-B3C3A91DE776}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {5F18346A-803E-4593-B54C-BD788CA1128D}
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,63 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="RFCalc.MainPage">
+
+    <ScrollView>
+        <VerticalStackLayout
+            Padding="30,0"
+            Spacing="25">
+            <Entry TextTransform="Uppercase" x:Name="tbApeP" Placeholder="Apellido Paterno"/>
+            <Entry TextTransform="Uppercase" x:Name="tbApeM" Placeholder="Apellido Materno"/>
+            <Entry TextTransform="Uppercase" x:Name="tbNom" Placeholder="Nombre(s)"/>
+
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="1*"/>
+                    <ColumnDefinition Width="2*"/>
+                </Grid.ColumnDefinitions>
+
+                <Label Grid.Column="0">Fecha de Nacimiento:</Label>
+
+                <DatePicker Grid.Column="1" Format="yy/MM/dd" x:Name="dtFecha" />
+            </Grid>
+
+            <Entry IsReadOnly="True" MaximumWidthRequest="300" x:Name="tbRFC" />
+
+            <Grid HorizontalOptions="Fill" VerticalOptions="Start" ColumnSpacing="20">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="1*"/>
+                    <ColumnDefinition Width="1*"/>
+                </Grid.ColumnDefinitions>
+
+                <Button Grid.Column="0" 
+                        Background="#33cc99" 
+                        TextColor="White" 
+                        x:Name="btnCalc" 
+                        Clicked="btnCalc_Clicked"  
+                        Text="Calcular RFC" 
+                        CornerRadius="20"
+                        FontSize="Small" />
+
+                <Button Grid.Column="1" 
+                        Background="#33cc99" 
+                        TextColor="White"  
+                        x:Name="btnCopy" 
+                        Clicked="btnCopy_Clicked" 
+                        Text="Copiar RFC" 
+                        CornerRadius="20"
+                        FontSize="Small" />
+            </Grid>
+            <Button Background="Red" 
+                    TextColor="White" 
+                    Text="Borrar" 
+                    x:Name="btnClear" 
+                    Clicked="btnClear_Clicked" 
+                    HorizontalOptions="Fill"
+                    CornerRadius="20"
+                    FontSize="Small" />
+
+        </VerticalStackLayout>
+    </ScrollView>
+
+</ContentPage>

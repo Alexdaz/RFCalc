@@ -22,7 +22,7 @@
                 <DatePicker Grid.Column="1" Format="yy/MM/dd" x:Name="dtFecha" />
             </Grid>
 
-            <Entry IsReadOnly="True" MaximumWidthRequest="300" x:Name="tbRFC" />
+            <Entry IsReadOnly="True" HorizontalTextAlignment="Center" MaximumWidthRequest="300" x:Name="tbRFC" />
 
             <Grid HorizontalOptions="Fill" VerticalOptions="Start" ColumnSpacing="20">
                 <Grid.ColumnDefinitions>
